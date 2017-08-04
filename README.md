@@ -37,3 +37,8 @@ Image Processing Study
 	Alpha Blending，不使用addWeighted方法，识别出其轮廓，然后计算距离再做blending，有点问题
 32. Eg32_Deghost
 	去鬼影算法
+33. Eg33_OpticalFlow
+	光流
+	Ref: http://blog.csdn.net/on2way/article/details/48969649; http://blog.csdn.net/on2way/article/details/48969649
+34. Eg34_OperatePixel
+	访问逐个像素，使用三种方法将RGB转换成灰度图，并比较效率：at<Vec>(r, c): 68 ms, iterator: 56 ms, c pointer[]: 34 ms

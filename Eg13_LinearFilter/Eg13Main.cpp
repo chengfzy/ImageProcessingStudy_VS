@@ -46,7 +46,7 @@ static void OnBilateralFilter(int, void*)
 
 int main()
 {
-	g_srcImage = imread("..\\pic\\car.jpg");
+	g_srcImage = imread("../../../data/cat.jpg");
 	if (!g_srcImage.data)
 	{
 		cout << "Read Image Error" << endl;
