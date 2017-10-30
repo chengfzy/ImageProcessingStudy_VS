@@ -1,7 +1,7 @@
 # Image Processing Study
 Image Processing Study
 
-# Content
+# Study Content
 1. Eg01_HelloOpenCV
 	OpenCV的基本应用:图像腐蚀、模糊、边缘检测
 2. Eg02_SavePicture
@@ -38,7 +38,29 @@ Image Processing Study
 32. Eg32_Deghost
 	去鬼影算法
 33. Eg33_OpticalFlow
-	光流
+	光流, Lucas-Kanade, Gunnar Farneback方法求光流
 	Ref: http://blog.csdn.net/on2way/article/details/48969649; http://blog.csdn.net/on2way/article/details/48969649
 34. Eg34_OperatePixel
 	访问逐个像素，使用三种方法将RGB转换成灰度图，并比较效率：at<Vec>(r, c): 68 ms, iterator: 56 ms, c pointer[]: 34 ms
+35. Eg35_FFT
+	DFT和IDFT算法
+36. Eg36_HoughTransform
+	Hough变换识别圆和直线
+37. Eg37_Keypoints
+	各种KeyPoint检测方法
+	Harris-Shi-Tomasi: 效果尚可
+	Simple Blob: 效果很差
+	FAST(Features from Accelerated Segments Test): 效果还行，比Harris-Shi-Tomasi差点，挤在一堆的现象依然存在
+	SIFT(Scale Invariant Feature Transform): 效果很好，并提供了128维特征描述矢量
+38. Eg38_KeypointMatch
+	KeyPoint匹配方法, Brute Force, FLANN
+39. Eg39_CameraCalibration
+	相机校正: 参考OpenCV tourials file:///D:/Programs/opencv3.3.0/doc/html/d4/d94/tutorial_camera_calibration.html.	无图片，未实验
+
+
+# Project
+1. Prj01_HazeRemoval
+	图片去雾算法
+	Ref: 
+		[1] Single Image Haze Removal using Dark Channel Prior, Kaiming He, Jian Sun, and Xiaoou Tang
+		[2] 

@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{7368C360-BB10-4011-82FF-39B21777F834}</ProjectGuid>
+    <ProjectGuid>{209476FD-D3A2-43D0-A987-9EE8B111B9A5}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>Eg32_Deghost</RootNamespace>
+    <RootNamespace>Eg37_Keypoints</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -143,7 +143,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Eg32Main.cpp" />
+    <ClCompile Include="Eg37Main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

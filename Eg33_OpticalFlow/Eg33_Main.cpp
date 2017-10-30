@@ -103,8 +103,8 @@ void motionToColor(Mat flow, Mat& color)
 // optical flow using Lucas-Kanade, sparse optical flow
 void testOpticalFlowLK()
 {
-	Mat preFrame = imread("../../../../Data/OpticalFlow/eval-data/Army/frame07.png", IMREAD_GRAYSCALE);
-	Mat frame = imread("../../../../Data/OpticalFlow/eval-data/Army/frame08.png", IMREAD_GRAYSCALE);
+	Mat preFrame = imread("../../../../Data/middlebury/Army/frame07.png", IMREAD_GRAYSCALE);
+	Mat frame = imread("../../../../Data/middlebury/Army/frame08.png", IMREAD_GRAYSCALE);
 	
 	vector<Point2f> preFeatures, features;
 	vector<uchar> status;
@@ -139,10 +139,16 @@ void testOpticalFlowLK()
 // Ref: Learn OpenCV3, p509, Example 16-1
 void testOpticalFlowLK02()
 {
-	Mat imgA = imread("../../../../Data/OpticalFlow/eval-data/Backyard/frame07.png", IMREAD_GRAYSCALE);
-	Mat imgB = imread("../../../../Data/OpticalFlow/eval-data/Backyard/frame08.png", IMREAD_GRAYSCALE);
-	
-	Mat imgC = imread("../../../../Data/OpticalFlow/eval-data/Backyard/frame08.png", IMREAD_UNCHANGED);
+#if 1
+	Mat imgA = imread("../../../../Data/middlebury/Army/frame07.png", IMREAD_GRAYSCALE);
+	Mat imgB = imread("../../../../Data/middlebury/Army/frame08.png", IMREAD_GRAYSCALE);	
+	Mat imgC = imread("../../../../Data/middlebury/Army/frame08.png", IMREAD_UNCHANGED);
+#else
+	Mat imgA = imread("../../../../Data/middlebury/Backyard/frame07.png", IMREAD_GRAYSCALE);
+	Mat imgB = imread("../../../../Data/middlebury/Backyard/frame08.png", IMREAD_GRAYSCALE);
+	Mat imgC = imread("../../../../Data/middlebury/Backyard/frame08.png", IMREAD_UNCHANGED);
+#endif
+
 	Size imageSize = imgA.size();
 	int winSize = 10;
 
@@ -171,8 +177,8 @@ void testOpticalFlowLK02()
 // optical flow using Gunnar Farneback, dense optical flow
 void testOpticalFlowFarneback()
 {
-	Mat preFrame = imread("../../../../Data/OpticalFlow/eval-data/Army/frame07.png", IMREAD_GRAYSCALE);
-	Mat frame = imread("../../../../Data/OpticalFlow/eval-data/Army/frame08.png", IMREAD_GRAYSCALE);
+	Mat preFrame = imread("../../../../Data/middlebury/Army/frame07.png", IMREAD_GRAYSCALE);
+	Mat frame = imread("../../../../Data/middlebury/Army/frame08.png", IMREAD_GRAYSCALE);
 	Mat flow;
 	calcOpticalFlowFarneback(preFrame, frame, flow, 0.5, 3, 20, 3, 5, 1.2, 0);
 
@@ -183,9 +189,9 @@ void testOpticalFlowFarneback()
 
 int main()
 {
-	//testOpticalFlowLK();
+	testOpticalFlowLK();
 	testOpticalFlowLK02();
-	//testOpticalFlowFarneback();
+	testOpticalFlowFarneback();
 
 	waitKey();
 	return 0;

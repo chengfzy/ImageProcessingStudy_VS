@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{7368C360-BB10-4011-82FF-39B21777F834}</ProjectGuid>
+    <ProjectGuid>{CA6BFD9B-E2A4-43D9-915E-F1E3F10FEB06}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>Eg32_Deghost</RootNamespace>
+    <RootNamespace>Eg39_CameraCalibration</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -143,7 +143,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Eg32Main.cpp" />
+    <ClCompile Include="Eg39Main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

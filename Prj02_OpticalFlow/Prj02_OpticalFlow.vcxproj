@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{7368C360-BB10-4011-82FF-39B21777F834}</ProjectGuid>
+    <ProjectGuid>{21EEEE52-726D-4CEE-BB66-6B0E08F56B0F}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>Eg32_Deghost</RootNamespace>
+    <RootNamespace>Prj02_OpticalFlow</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -102,10 +102,12 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Programs\gflags\include;D:\Programs\glog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>D:\Programs\gflags\lib\gflags_static.lib;D:\Programs\glog\lib\glog.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -143,7 +145,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Eg32Main.cpp" />
+    <ClCompile Include="CvUtil.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="TestOpticalFlow.cpp" />
+    <ClCompile Include="NovelView.cpp" />
+    <ClCompile Include="OpticalFlowVisualization.cpp" />
+    <ClCompile Include="TestRenderStereoPanorama.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CvUtil.h" />
+    <ClInclude Include="LinearRegression.h" />
+    <ClInclude Include="MathUtil.h" />
+    <ClInclude Include="NovelView.h" />
+    <ClInclude Include="OpticalFlowVisualization.h" />
+    <ClInclude Include="VrCamException.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

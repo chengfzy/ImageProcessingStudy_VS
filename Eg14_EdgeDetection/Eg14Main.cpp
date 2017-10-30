@@ -19,7 +19,7 @@ int g_sobelKernelSize = 1;			//trackbar位置参数
 //基本的Canny边缘检测
 void CannyBasic()
 {
-	Mat srcImage = imread("..\\pic\\Orange.jpg");
+	Mat srcImage = imread("../../../data/Orange.jpg");
 	Mat srcCopy = srcImage.clone();
 
 	imshow("Origin", srcImage);
@@ -117,7 +117,7 @@ int main()
 {	
 	//CannyBasic();
 
-	g_srcImage = imread("..\\pic\\Orange.jpg");
+	g_srcImage = imread("../../../data/Orange.jpg");
 	if (!g_srcImage.data)
 		cout << "Read Image Error" << endl;
 	
