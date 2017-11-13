@@ -52,10 +52,13 @@ Image Processing Study
 	Simple Blob: 效果很差
 	FAST(Features from Accelerated Segments Test): 效果还行，比Harris-Shi-Tomasi差点，挤在一堆的现象依然存在
 	SIFT(Scale Invariant Feature Transform): 效果很好，并提供了128维特征描述矢量
+	SURF(Speeded Up Robost Features): 效果不错，速度快
 38. Eg38_KeypointMatch
 	KeyPoint匹配方法, Brute Force, FLANN
 39. Eg39_CameraCalibration
 	相机校正: 参考OpenCV tourials file:///D:/Programs/opencv3.3.0/doc/html/d4/d94/tutorial_camera_calibration.html.	无图片，未实验
+40. Eg40_VideoTracking
+	Video Tracking, using CamShift algorithm, 参考OpenCV_dir\samples\cpp\camshiftdemo.cpp，无摄像头，不好测试，结果待定
 
 
 # Project

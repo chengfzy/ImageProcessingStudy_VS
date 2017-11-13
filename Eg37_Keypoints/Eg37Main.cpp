@@ -122,8 +122,7 @@ void testSIFT(const Mat& image) {
 	Ptr<xfeatures2d::SIFT> detector = xfeatures2d::SIFT::create(0);
 	vector<KeyPoint> keypoints;
 	Mat descriptors;
-	detector->detect(grayImage, keypoints);
-	detector->compute(grayImage, keypoints, descriptors);
+	detector->detectAndCompute(grayImage, noArray(), keypoints, descriptors);
 	printf("SIFT(Scale Invariant Feature Transform): keypoints = %d, descriptor = (w%d, h%d)\n",
 		keypoints.size(), descriptors.cols, descriptors.rows);
 
@@ -133,10 +132,26 @@ void testSIFT(const Mat& image) {
 	imshow("SIFT", dst);
 }
 
+// SURF(Speeded Up Robost Features) detector
+void testSURF(const Mat& image) {
+	Mat grayImage = convertToGray(image);
 
+	// detect
+	Ptr<xfeatures2d::SURF> detector = xfeatures2d::SURF::create(300);
+	vector<KeyPoint> keypoints;
+	Mat descriptors;	
+	detector->detectAndCompute(grayImage, noArray(), keypoints, descriptors);
+	printf("SURF(Speeded Up Robost Features): keypoints = %d, descriptor = (w%d, h%d)\n",
+		keypoints.size(), descriptors.cols, descriptors.rows);
+
+	// draw keypoints
+	Mat dst;
+	drawKeypoints(image, keypoints, dst, Scalar(-1), DrawMatchesFlags::DRAW_RICH_KEYPOINTS);
+	imshow("SURF", dst);
+}
 
 int main() {
-	Mat image = imread("../../../../Data/stillA.jpg", IMREAD_UNCHANGED);
+	Mat image = imread("../../../data/still01.jpg", IMREAD_UNCHANGED);
 	if (image.empty()) {
 		cout << "cannot read the image..." << endl;
 		return -1;
@@ -150,8 +165,9 @@ int main() {
 	//testHarris(image);
 	//testHarrisB(image);			// another calling method
 	//testSimpleBlob(image);
-	testFAST(image);
-	testSIFT(image);
+	//testFAST(image);
+	//testSIFT(image);
+	testSURF(image);
 
 	waitKey();
 	return 0;
