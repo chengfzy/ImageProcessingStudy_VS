@@ -11,7 +11,8 @@ void calcHSHist(const Mat& src, Mat& hist, bool show = true) {
 	
 	// calc histogram and normalize
 	calcHist(vector<Mat>{ src }, vector<int>{ 0, 1 }, noArray(), hist, vector<int>{ 30, 32 }, vector<float>{ 0, 180, 0, 256 }, false);
-	normalize(hist, hist, 0, 1, NORM_MINMAX);	
+	//normalize(hist, hist, 0, 1, NORM_MINMAX);	
+	normalize(hist, hist);
 
 	if (show) {
 		double maxVal{ 0 };

@@ -64,6 +64,8 @@ Image Processing Study
 42. Eg42_HistCompare
 	直方图比较: 由于直方图的局限性，仅反映图像像素各灰度值的数量，不能反映纹理结构，因此存在很多误判。
 	比如纹理结构相同，但明暗不同的图像，相似度会很低，纹理结构不同，但明暗相近的图像，相似度却很高。
+43. Eg43_EMDHistCompare
+	EMD(陆地移动距离)比较直方图，Ref Learning OpenCV 3, P390, Example13-2
 
 # Project
 1. Prj01_HazeRemoval
