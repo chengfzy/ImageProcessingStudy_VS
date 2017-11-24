@@ -59,11 +59,16 @@ Image Processing Study
 	相机校正: 参考OpenCV tourials file:///D:/Programs/opencv3.3.0/doc/html/d4/d94/tutorial_camera_calibration.html.	无图片，未实验
 40. Eg40_VideoTracking
 	Video Tracking, using CamShift algorithm, 参考OpenCV_dir\samples\cpp\camshiftdemo.cpp，无摄像头，不好测试，结果待定
-
+41. Eg41_CalcHist
+	计算图像的RGB直方图和2维HS直方图
+42. Eg42_HistCompare
+	直方图比较: 由于直方图的局限性，仅反映图像像素各灰度值的数量，不能反映纹理结构，因此存在很多误判。
+	比如纹理结构相同，但明暗不同的图像，相似度会很低，纹理结构不同，但明暗相近的图像，相似度却很高。
 
 # Project
 1. Prj01_HazeRemoval
 	图片去雾算法
 	Ref: 
 		[1] Single Image Haze Removal using Dark Channel Prior, Kaiming He, Jian Sun, and Xiaoou Tang
-		[2] 
+2. Prj02_CameraCalibration
+	相机校正，
