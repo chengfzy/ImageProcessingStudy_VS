@@ -66,6 +66,12 @@ Image Processing Study
 	比如纹理结构相同，但明暗不同的图像，相似度会很低，纹理结构不同，但明暗相近的图像，相似度却很高。
 43. Eg43_EMDHistCompare
 	EMD(陆地移动距离)比较直方图，Ref Learning OpenCV 3, P390, Example13-2
+44. Eg44_BackProjection
+	计算(BackProjection)反向投影，只使用了HSV中的H通道
+	Ref: https://github.com/opencv/opencv/blob/master/samples/cpp/tutorial_code/Histograms_Matching/calcBackProject_Demo1.cpp
+45. Eg45_ImprovedBackProjection
+	计算(BackProjection)反向投影，使用了HSV中的HS通道，并使用FloodFill作为mask
+	Ref: https://github.com/opencv/opencv/blob/master/samples/cpp/tutorial_code/Histograms_Matching/calcBackProject_Demo2.cpp
 
 # Project
 1. Prj01_HazeRemoval
