@@ -102,10 +102,13 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Programs\Ceres\include;D:\Programs\Eigen3\include\eigen3;D:\Programs\glog\include;D:\Programs\gflags\include;D:\Programs\opencv3.3.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\Programs\Ceres\lib;D:\Programs\opencv3.3.1\x64\vc14\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ceres-debug.lib;D:\Programs\gflags\lib\gflags_staticd.lib;D:\Programs\glog\lib\glogd.lib;shlwapi.lib;opencv_aruco331d.lib;opencv_bgsegm331d.lib;opencv_bioinspired331d.lib;opencv_calib3d331d.lib;opencv_ccalib331d.lib;opencv_core331d.lib;opencv_cudaarithm331d.lib;opencv_cudabgsegm331d.lib;opencv_cudacodec331d.lib;opencv_cudafeatures2d331d.lib;opencv_cudafilters331d.lib;opencv_cudaimgproc331d.lib;opencv_cudalegacy331d.lib;opencv_cudaobjdetect331d.lib;opencv_cudaoptflow331d.lib;opencv_cudastereo331d.lib;opencv_cudawarping331d.lib;opencv_cudev331d.lib;opencv_datasets331d.lib;opencv_dnn331d.lib;opencv_dpm331d.lib;opencv_face331d.lib;opencv_features2d331d.lib;opencv_flann331d.lib;opencv_fuzzy331d.lib;opencv_highgui331d.lib;opencv_imgcodecs331d.lib;opencv_imgproc331d.lib;opencv_img_hash331d.lib;opencv_line_descriptor331d.lib;opencv_ml331d.lib;opencv_objdetect331d.lib;opencv_optflow331d.lib;opencv_phase_unwrapping331d.lib;opencv_photo331d.lib;opencv_plot331d.lib;opencv_reg331d.lib;opencv_rgbd331d.lib;opencv_saliency331d.lib;opencv_sfm331d.lib;opencv_shape331d.lib;opencv_stereo331d.lib;opencv_stitching331d.lib;opencv_structured_light331d.lib;opencv_superres331d.lib;opencv_surface_matching331d.lib;opencv_text331d.lib;opencv_tracking331d.lib;opencv_video331d.lib;opencv_videoio331d.lib;opencv_videostab331d.lib;opencv_xfeatures2d331d.lib;opencv_ximgproc331d.lib;opencv_xobjdetect331d.lib;opencv_xphoto331d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -134,12 +137,15 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Programs\Ceres\include;D:\Programs\Eigen3\include\eigen3;D:\Programs\glog\include;D:\Programs\gflags\include;D:\Programs\opencv3.3.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>ceres.lib;D:\Programs\gflags\lib\gflags_static.lib;D:\Programs\glog\lib\glog.lib;shlwapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\Programs\Ceres\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

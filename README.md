@@ -76,7 +76,6 @@ Image Processing Study
 # Project
 1. Prj01_HazeRemoval
 	图片去雾算法
-	Ref: 
-		[1] Single Image Haze Removal using Dark Channel Prior, Kaiming He, Jian Sun, and Xiaoou Tang
+	Ref: [1] Single Image Haze Removal using Dark Channel Prior, Kaiming He, Jian Sun, and Xiaoou Tang
 2. Prj02_CameraCalibration
-	相机校正，
+	相机校正，用同一相机在两个不同的位置拍摄两张照片，使用这两张图片来计算出相机的参数及运动矩阵R,t。未完成，优化时不收敛
