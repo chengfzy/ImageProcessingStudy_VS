@@ -72,6 +72,15 @@ Image Processing Study
 45. Eg45_ImprovedBackProjection
 	计算(BackProjection)反向投影，使用了HSV中的HS通道，并使用FloodFill作为mask
 	Ref: https://github.com/opencv/opencv/blob/master/samples/cpp/tutorial_code/Histograms_Matching/calcBackProject_Demo2.cpp
+46. Eg46_TemplateMatch
+	模板匹配，Ref: file:///D:/Programs/opencv3.3.1/doc/html/de/da9/tutorial_template_matching.html
+47. Eg47_FindContour
+	查找并绘制轮廓(Contour)，Ref Learning OpenCV 3, P415, Example14-1
+48. Eg48_ImprovedFindContour
+	查找并绘制轮廓(Contour)，使用按键查看绘制轮廓步骤，Ref Learning OpenCV 3, P416, Example14-2
+49. Eg49_FindContourUsingCanny
+	使用Canny找到边缘后，再查找并绘制轮廓(Contour)，Ref: file:///D:/Programs/opencv3.3.1/doc/html/df/d0d/tutorial_find_contours.html
+
 
 # Project
 1. Prj01_HazeRemoval
