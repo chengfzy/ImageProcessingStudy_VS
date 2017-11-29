@@ -65,7 +65,7 @@ Image Processing Study
 	直方图比较: 由于直方图的局限性，仅反映图像像素各灰度值的数量，不能反映纹理结构，因此存在很多误判。
 	比如纹理结构相同，但明暗不同的图像，相似度会很低，纹理结构不同，但明暗相近的图像，相似度却很高。
 43. Eg43_EMDHistCompare
-	EMD(陆地移动距离)比较直方图，Ref Learning OpenCV 3, P390, Example13-2
+	EMD(陆地移动距离)比较直方图，Ref: Learning OpenCV 3, P390, Example13-2
 44. Eg44_BackProjection
 	计算(BackProjection)反向投影，只使用了HSV中的H通道
 	Ref: https://github.com/opencv/opencv/blob/master/samples/cpp/tutorial_code/Histograms_Matching/calcBackProject_Demo1.cpp
@@ -75,11 +75,27 @@ Image Processing Study
 46. Eg46_TemplateMatch
 	模板匹配，Ref: file:///D:/Programs/opencv3.3.1/doc/html/de/da9/tutorial_template_matching.html
 47. Eg47_FindContour
-	查找并绘制轮廓(Contour)，Ref Learning OpenCV 3, P415, Example14-1
+	查找并绘制轮廓(Contour)，Ref: Learning OpenCV 3, P415, Example14-1
 48. Eg48_ImprovedFindContour
 	查找并绘制轮廓(Contour)，使用按键查看绘制轮廓步骤，Ref Learning OpenCV 3, P416, Example14-2
 49. Eg49_FindContourUsingCanny
 	使用Canny找到边缘后，再查找并绘制轮廓(Contour)，Ref: file:///D:/Programs/opencv3.3.1/doc/html/df/d0d/tutorial_find_contours.html
+50. Eg50_DrawLabeledConnectedComponents
+	将图片按区域连通，并用不同颜色绘制出来，Ref: Learning OpenCV 3, P419, Example14-3
+51. Eg51_PolygonApprox
+	多边形近似图形, Ref: file:///D:/Programs/opencv3.3.1/doc/html/d0/d2a/contours2_8cpp-example.html#a24
+52. Eg52_BoundingRect
+	针对识别出的图像轮廓(contours)，找到其多边形近似，边界矩形和圆近似等(approxPolyDP, boundingRect, minAreaRect, minEnclosingCircle, fitEllipse)
+	Ref:
+	https://github.com/opencv/opencv/blob/master/samples/cpp/tutorial_code/ShapeDescriptors/generalContours_demo1.cpp
+	https://github.com/opencv/opencv/blob/master/samples/cpp/tutorial_code/ShapeDescriptors/generalContours_demo2.cpp
+53. Eg53_PointPolygonTest
+	检测点是否在多边形内，并计算出距多边形边界的值，并将值绘制出来.
+	Ref: https://github.com/opencv/opencv/blob/master/samples/cpp/tutorial_code/ShapeDescriptors/pointPolygonTest_demo.cpp
+
+
+
+
 
 
 # Project
